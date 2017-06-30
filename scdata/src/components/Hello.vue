@@ -123,7 +123,7 @@
 		l0.3-2.1l-0.3-2.1l-0.8-2l-1.3-1.7l-0.9-0.8l-1.2-0.8l-0.8-0.3l-2.3-4.5L269.9,700"/>
 	<path id="SC_Laurens" fill="#283681" stroke="#FFFFFF" stroke-width="1.1565" d="M291,683.2l13,2.5l-2.7,6.3l-3.6,7l-1.6,1.6
 		l-4.7,8l-1.5,3.5l-5.1-2.9l-8.7-4.5l-5.1-3.7l-1.1-1.1l-4.8-4.8l4-4.4l-0.7-3.7l1.8-8.4l1.5-6.7L291,683.2"/>
-	<path id="SC_Abbeville" inkscape:label="Abbeville, SC" fill="#283681" stroke="#FFFFFF" stroke-width="1.1565" d="M265.2,695.2
+	<path id="SC_Abbeville" @click="alert()" inkscape:label="Abbeville, SC" fill="#283681" stroke="#FFFFFF" stroke-width="1.1565" d="M265.2,695.2
 		l4.8,4.8l-4.5,5.6l2.3,4.5l0.8,0.3l1.2,0.8l0.9,0.8l1.3,1.7l0.8,2l0.3,2.1l-0.3,2.1l-0.8,2.1l-1.1,1.5l-1.9,2.2l-2.9,0.9l-3.8,0.4
 		l-0.7,0l-2.2-1l-2.5,0.8l-3.3,4.9l-10.5-13L265.2,695.2"/>
 	<path id="SC_Anderson" inkscape:label="Anderson, SC" fill="#283681" stroke="#FFFFFF" stroke-width="1.1565" d="M232.9,689.5
@@ -173,13 +173,18 @@
 
 <script>
 export default {
-  name: 'hello',
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+    };  
+  },
+  methods: {
+    alert(){
+        alert('hello')
+    },
+  },
+  filters: {
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
