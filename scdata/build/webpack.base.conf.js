@@ -46,6 +46,11 @@ module.exports = {
         }
       },
       {
+          test: /\.s[a|c]ss$/,
+          loader: 'sass-loader',
+          loader: 'style!css!sass'
+      },
+      {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
