@@ -368,7 +368,7 @@ export default {
 					population: 152478,
 					populationRank: 12
 				},
-				17: {
+				19: {
 					name: "Edgefield",
 					bio:  `The origin of the name Edgefield is not clear, although it is usually described as "fanciful." The county was formed in 1785 as part of Ninety Six District; parts of
 								Edgefield later went to form Aiken (1871), Saluda (1895), Greenwood (1897), and McCormick (1916) counties. This part of the upcountry, settled in the late
@@ -380,7 +380,7 @@ export default {
 					population: 26514,
 					populationRank: 36
 				},
-				17: {
+				20: {
 					name: "Fairfield",
 					bio:  `The origin of the name Fairfield is not known, but local legend attributes it to a remark by Lord Cornwallis about the "fair fields" of the area. The county was
 								formed in 1785 as a part of Camden District. The town of Winnsboro, which was settled around 1755, is the county seat. Fairfield County lies between the
@@ -394,7 +394,7 @@ export default {
 					population: 22747,
 					populationRank: 28
 				},
-				19: {
+				21: {
 					name: "Greenville",
 					bio:  `The origins of the name Greenville County are uncertain, but the county was probably named for Revolutionary War General Nathanael Greene (1742-1786) or
 								for an early resident, Isaac Green. This part of the state was the territory of the Cherokee Indians until 1777. Scotch-Irish and English settlers began moving into
@@ -408,7 +408,7 @@ export default {
 					population: 491863,
 					populationRank: 1
 				},
-				20: {
+				22: {
 					name: "Greenwood",
 					bio:  `Greenwood County takes its name from its county seat, Greenwood. The town of Greenwood was named around 1824 for the plantation of an early resident,
 								John McGehee. Greenwood County was formed in 1897 from parts of Abbeville and Edgefield counties, which were originally part of the old Ninety Six District.
@@ -420,9 +420,58 @@ export default {
 								Mays (1894-1984) were also residents of Greenwood County.`,
 					populationRange: [59567, 66271, 69661],
 					population: 69838,
-					populationRank: 29
+					populationRank: 19
 				},
-				20: {
+				23: {
+					name: "Hampton",
+					bio:  `Hampton County and its county seat were named for Confederate General and South Carolina Governor Wade Hampton (1818-1902). The county was formed
+								from Beaufort County in 1878, shortly after Wade Hampton took office as governor. Parts of Hampton County later went to form Jasper (1912) and Allendale
+								(1919) counties. During the Civil War, while the coastal areas of Beaufort County were occupied by federal troops, many planters fled to the area that became
+								Hampton County. General Sherman's troops passed through the county in 1865, fighting several skirmishes with Confederate troops. This section of the state
+								has remained primarily agricultural. Athlete Lucile Ellerbe Godbold (1900-1981), who won two gold medals in track and field at the 1922 Olympics, grew up in
+								Hampton County, and writer Vertamae Grosvenor was also born there. `,
+					populationRange: [18191, 21386, 21090],
+					population: 20049,
+					populationRank: 41
+				},
+				24: {
+					name: "Horry",
+					bio:  `Horry County was named for Revolutionary War hero Peter Horry (1743-1815). The county was originally a part of Georgetown District, and at one time it was
+								called Kingston. It became a separate county in 1801, with the county seat at Conway. This area of the state was isolated for many years by numerous rivers
+								and swamps, and the inhabitants sometimes referred to themselves as the "Independent Republic of Horry." Lumber and naval stores were the primary
+								industries during the eighteenth and early nineteenth centuries, with tobacco farming being introduced later. In the twentieth century, tourism has come to
+								dominate the coastal section of the county centered around Myrtle Beach. Television personality Vanna White is a native of Horry County.`,
+					populationRange: [144053, 196629, 269291],
+					population: 309199,
+					populationRank: 4
+				},
+				25: {
+					name: "Jasper",
+					bio:  `Jasper County was named for Revolutionary War hero Sergeant William Jasper (ca.1750-1779). The county was formed in 1912 from parts of Beaufort and
+								Hampton counties. This area of the state was the home of the Yemassee and Coosaw Indians until colonial times. In 1732 Swiss-German immigrants led by
+								Jean Pierre Purry established a settlement called Purrysburgh on the Savannah River, but the town did not survive. Other settlers built extensive rice
+								plantations, some of which now form the Savannah River National Wildlife Refuge. Two other towns in the county, Coosawhatchie and Pocotaligo, served at
+								different times as the seat of government for Beaufort District. During the Civil War the Confederate Army defeated federal troops at the Battle of Honey Hill in
+								November 1864. Jasper County was home to Thomas Heyward, Jr. (1746-1809), a signer of the Declaration of Independence, and Henry Martyn Robert (1837-
+								1923), author of Robert's Rules of Order.`,
+					populationRange: [15487, 20678, 24777],
+					population: 27824,
+					populationRank: 33
+				},
+				26: {
+					name: "Kershaw",
+					bio:  `Kershaw County was named for Joseph Kershaw (1727-1791), an early settler. Originally part of Camden District, Kershaw County was formed in 1791 from
+								parts of Claremont, Lancaster, Fairfield, and Richland counties. The county seat is Camden, which is the oldest inland city in South Carolina. This site was
+								settled around 1732 by English traders and farmers who moved inland from Charleston. During the Revolutionary War, the British occupied Camden from June
+								1780 to May 1781. Fourteen battles took place in the area, including the Battle of Camden (August 16, 1780) and the Battle of Hobkirk Hill (April 25, 1781).
+								Kershaw County later produced six Confederate generals: Joseph Brevard Kershaw (1822-1894), James Chesnut (1815-1885), James Cantey (1818-1873),
+								Zack Cantey Deas (1819-1882), John Bordenave Villepigue (1830-1862), and John Doby Kennedy (1840-1896). Union troops under General Sherman burned
+								parts of Camden in February 1865. Statesman and financier Bernard M. Baruch (1870-1965) and labor leader Lane Kirkland were born in Kershaw County.`,
+					populationRange: [43599, 52647, 61697],
+					population: 63603,
+					populationRank: 22
+				},
+				27: {
 					name: "Georgetown",
 					bio:  `Georgetown County and its county seat were named for King George II of England. Spanish explorers are believed to have visited this coastal area in 1526, but
 								no permanent settlement was established. English planters and their African slaves moved into the region in the early eighteenth century, building large rice and
@@ -436,103 +485,40 @@ export default {
 					population: 61298,
 					populationRank: 23
 				},
-				20: {
-					name: "Georgetown",
-					bio:  `Georgetown County and its county seat were named for King George II of England. Spanish explorers are believed to have visited this coastal area in 1526, but
-								no permanent settlement was established. English planters and their African slaves moved into the region in the early eighteenth century, building large rice and
-								indigo plantations. The town of Georgetown, which was established around 1730, was a busy port serving the surrounding plantations. Georgetown District was
-								first named in 1769 and in 1785 the district was divided into four counties: Liberty (which became Marion District in 1800), Kingston (which became Horry District
-								in 1801), Williamsburg (which became a separate district in 1804), and Winyah (which was renamed Georgetown in 1800). Many famous South Carolinians
-								were residents of Georgetown County, including Thomas Lynch, Jr. (1749-1779), a signer of the Declaration of Independence; Joel Roberts Poinsett (1779-
-								1851), U.S. Congressman, Secretary of War, and Ambassador to Mexico, who introduced the poinsettia to the U.S.; and Joseph Hayne Rainey (1832-1887), the
-								first African-American elected to the U.S. House of Representatives.`,
+				28: {
+					name: "Lancaster",
+					bio:  `Lancaster County and its county seat were named for Lancaster County, Pennsylvania. The county was formed in 1785, and it was originally part of Camden
+								District. A part of Lancaster County was removed in 1791 to form Kershaw County. Scotch-Irish settlers from Pennsylvania began moving into this upstate
+								region in the 1750s. The Waxhaws settlement on the border with North Carolina was the birthplace of President Andrew Jackson (1767-1845). During the
+								Revolutionary War British Lieutenant Colonel Banastre Tarleton earned his nickname of "Bloody" Tarleton by massacring American troops in this area on May
+								29, 1780; the Battle of Hanging Rock was also fought in the county later the same year. Although Lancaster County has been primarily agricultural, gold mining
+								began there in the 1820s and textile manufacturing sprang up following the Civil War. Governor and U.S. Senator Stephen Decatur Miller (1787-1838), surgeon
+								J. Marion Sims (1813-1883), industrialist Elliott White Springs (1896-1959), and astronaut Charles M. Duke, Jr. were all Lancaster County residents`,
+					populationRange: [54516, 61351, 76652],
+					population: 85842,
+					populationRank: 17
+				},
+				29: {
+					name: "Laurens",
+					bio:  `Laurens County and its county seat were named for Revolutionary War leader Henry Laurens (1724-1792). The county was established in 1785 as a part of
+								Ninety Six District. This part of the state was settled primarily by Scotch-Irish and English immigrants in the mid 1700s, and during the American Revolution
+								quite a few of its residents remained loyal to Great Britain. Several Revolutionary War battles were fought in the county, including the Battle of Musgrove's Mill
+								(August 18, 1780). President Andrew Johnson (1808-1875), a native of North Carolina, worked as a tailor in the town of Laurens for a brief time in the 1820s.
+								Laurens County was also home to Ann Pamela Cunningham (1816-1875), the leader of the movement to preserve Mount Vernon, and educator Wil Lou Gray
+								(1883-1984).`,
 					populationRange: [46302, 55797, 60158],
 					population: 61298,
 					populationRank: 23
 				},
-				20: {
-					name: "Georgetown",
-					bio:  `Georgetown County and its county seat were named for King George II of England. Spanish explorers are believed to have visited this coastal area in 1526, but
-								no permanent settlement was established. English planters and their African slaves moved into the region in the early eighteenth century, building large rice and
-								indigo plantations. The town of Georgetown, which was established around 1730, was a busy port serving the surrounding plantations. Georgetown District was
-								first named in 1769 and in 1785 the district was divided into four counties: Liberty (which became Marion District in 1800), Kingston (which became Horry District
-								in 1801), Williamsburg (which became a separate district in 1804), and Winyah (which was renamed Georgetown in 1800). Many famous South Carolinians
-								were residents of Georgetown County, including Thomas Lynch, Jr. (1749-1779), a signer of the Declaration of Independence; Joel Roberts Poinsett (1779-
-								1851), U.S. Congressman, Secretary of War, and Ambassador to Mexico, who introduced the poinsettia to the U.S.; and Joseph Hayne Rainey (1832-1887), the
-								first African-American elected to the U.S. House of Representatives.`,
-					populationRange: [46302, 55797, 60158],
-					population: 61298,
-					populationRank: 23
-				},
-				20: {
-					name: "Georgetown",
-					bio:  `Georgetown County and its county seat were named for King George II of England. Spanish explorers are believed to have visited this coastal area in 1526, but
-								no permanent settlement was established. English planters and their African slaves moved into the region in the early eighteenth century, building large rice and
-								indigo plantations. The town of Georgetown, which was established around 1730, was a busy port serving the surrounding plantations. Georgetown District was
-								first named in 1769 and in 1785 the district was divided into four counties: Liberty (which became Marion District in 1800), Kingston (which became Horry District
-								in 1801), Williamsburg (which became a separate district in 1804), and Winyah (which was renamed Georgetown in 1800). Many famous South Carolinians
-								were residents of Georgetown County, including Thomas Lynch, Jr. (1749-1779), a signer of the Declaration of Independence; Joel Roberts Poinsett (1779-
-								1851), U.S. Congressman, Secretary of War, and Ambassador to Mexico, who introduced the poinsettia to the U.S.; and Joseph Hayne Rainey (1832-1887), the
-								first African-American elected to the U.S. House of Representatives.`,
-					populationRange: [46302, 55797, 60158],
-					population: 61298,
-					populationRank: 23
-				},
-				20: {
-					name: "Georgetown",
-					bio:  `Georgetown County and its county seat were named for King George II of England. Spanish explorers are believed to have visited this coastal area in 1526, but
-								no permanent settlement was established. English planters and their African slaves moved into the region in the early eighteenth century, building large rice and
-								indigo plantations. The town of Georgetown, which was established around 1730, was a busy port serving the surrounding plantations. Georgetown District was
-								first named in 1769 and in 1785 the district was divided into four counties: Liberty (which became Marion District in 1800), Kingston (which became Horry District
-								in 1801), Williamsburg (which became a separate district in 1804), and Winyah (which was renamed Georgetown in 1800). Many famous South Carolinians
-								were residents of Georgetown County, including Thomas Lynch, Jr. (1749-1779), a signer of the Declaration of Independence; Joel Roberts Poinsett (1779-
-								1851), U.S. Congressman, Secretary of War, and Ambassador to Mexico, who introduced the poinsettia to the U.S.; and Joseph Hayne Rainey (1832-1887), the
-								first African-American elected to the U.S. House of Representatives.`,
-					populationRange: [46302, 55797, 60158],
-					population: 61298,
-					populationRank: 23
-				},
-				20: {
-					name: "Georgetown",
-					bio:  `Georgetown County and its county seat were named for King George II of England. Spanish explorers are believed to have visited this coastal area in 1526, but
-								no permanent settlement was established. English planters and their African slaves moved into the region in the early eighteenth century, building large rice and
-								indigo plantations. The town of Georgetown, which was established around 1730, was a busy port serving the surrounding plantations. Georgetown District was
-								first named in 1769 and in 1785 the district was divided into four counties: Liberty (which became Marion District in 1800), Kingston (which became Horry District
-								in 1801), Williamsburg (which became a separate district in 1804), and Winyah (which was renamed Georgetown in 1800). Many famous South Carolinians
-								were residents of Georgetown County, including Thomas Lynch, Jr. (1749-1779), a signer of the Declaration of Independence; Joel Roberts Poinsett (1779-
-								1851), U.S. Congressman, Secretary of War, and Ambassador to Mexico, who introduced the poinsettia to the U.S.; and Joseph Hayne Rainey (1832-1887), the
-								first African-American elected to the U.S. House of Representatives.`,
-					populationRange: [46302, 55797, 60158],
-					population: 61298,
-					populationRank: 23
-				},
-				20: {
-					name: "Georgetown",
-					bio:  `Georgetown County and its county seat were named for King George II of England. Spanish explorers are believed to have visited this coastal area in 1526, but
-								no permanent settlement was established. English planters and their African slaves moved into the region in the early eighteenth century, building large rice and
-								indigo plantations. The town of Georgetown, which was established around 1730, was a busy port serving the surrounding plantations. Georgetown District was
-								first named in 1769 and in 1785 the district was divided into four counties: Liberty (which became Marion District in 1800), Kingston (which became Horry District
-								in 1801), Williamsburg (which became a separate district in 1804), and Winyah (which was renamed Georgetown in 1800). Many famous South Carolinians
-								were residents of Georgetown County, including Thomas Lynch, Jr. (1749-1779), a signer of the Declaration of Independence; Joel Roberts Poinsett (1779-
-								1851), U.S. Congressman, Secretary of War, and Ambassador to Mexico, who introduced the poinsettia to the U.S.; and Joseph Hayne Rainey (1832-1887), the
-								first African-American elected to the U.S. House of Representatives.`,
-					populationRange: [46302, 55797, 60158],
-					population: 61298,
-					populationRank: 23
-				},
-				20: {
-					name: "Georgetown",
-					bio:  `Georgetown County and its county seat were named for King George II of England. Spanish explorers are believed to have visited this coastal area in 1526, but
-								no permanent settlement was established. English planters and their African slaves moved into the region in the early eighteenth century, building large rice and
-								indigo plantations. The town of Georgetown, which was established around 1730, was a busy port serving the surrounding plantations. Georgetown District was
-								first named in 1769 and in 1785 the district was divided into four counties: Liberty (which became Marion District in 1800), Kingston (which became Horry District
-								in 1801), Williamsburg (which became a separate district in 1804), and Winyah (which was renamed Georgetown in 1800). Many famous South Carolinians
-								were residents of Georgetown County, including Thomas Lynch, Jr. (1749-1779), a signer of the Declaration of Independence; Joel Roberts Poinsett (1779-
-								1851), U.S. Congressman, Secretary of War, and Ambassador to Mexico, who introduced the poinsettia to the U.S.; and Joseph Hayne Rainey (1832-1887), the
-								first African-American elected to the U.S. House of Representatives.`,
-					populationRange: [46302, 55797, 60158],
-					population: 61298,
-					populationRank: 23
+				30: {
+					name: "Lee",
+					bio:  `Lee County was named for Confederate General Robert E. Lee (1807-1870). The county was formed in 1902 from parts of Darlington, Kershaw, and Sumter
+								counties. A Revolutionary War skirmish took place in 1781 at Ratcliff's Bridge, and during the Civil War Confederate and Union troops skirmished at Mount Elon
+								and Spring Hill in 1865. Lee County was also the site in 1880 of the last fatal duel fought in South Carolina. Cotton farming has long been associated with this
+								area. U.S. Senator Ellison Durant Smith (1864-1944), a native of Lee County, was nicknamed "Cotton Ed" because of his support for cotton farmers.`,
+					populationRange: [18437, 20119, 19220],
+					population: 17896,
+					populationRank: 42
 				},
 			},
 			countyName: null,
