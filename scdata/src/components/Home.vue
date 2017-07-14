@@ -1,25 +1,9 @@
 <template>
   <div class="container">
 
-		<div style="margin:2em 0;">
-			<div class="pure-g">
-				<div class="pure-u-1-5">
-					<img src="../assets/logos.svg" style="opacity:0.3">
-				</div>
-				<div class="pure-u-4-5 align-right">
-					<ul>
-						<li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-						<li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-						<li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-						<li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="pure-g">
-			<div class="pure-u-12-24">
-				 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="500" height="400" viewBox="-22174,-14141 44194,35222">
+<div class="columns">
+  <div class="column">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="500" height="400" viewBox="-22174,-14141 44194,35222">
 				<g stroke="grey" fill="white" stroke-linejoin="round" stroke-width="100">
 				<use xlink:href="#state_outline" fill="black" stroke-width="309" />
 				<path id="Abbeville" :class="{'active': activeCounty === 'Abbeville'}" @click="selectCounty(1, 'Abbeville')"  d="M -12686,-6009 l 61,177 200,166 92,171 98,35 179,268 -834,746 5,10 56,65 21,66 20,65 72,26 36,15 -5,15 0,35 10,61 0,40 -10,35 31,292 51,31 72,40 158,156 108,136 133,242 26,76 25,101 36,186 0,20 -10,293 -82,302 -51,91 -71,126 -46,86 -103,91 -30,35 -425,358 -461,66 -639,-41 -159,-95 -190,-141 -148,100 -276,-5 -589,606 -15,20 -16,-50 -9,-36 -1,-20 0,-15 5,-35 -1,-11 -6,-19 -8,-14 -10,-12 -31,-30 -31,-25 -26,-26 -20,-30 -15,-30 -21,-24 -20,-16 -13,-15 -13,-16 -15,-30 -16,-35 -15,-30 -25,-35 -21,-11 -30,-11 -31,-10 -26,-19 -31,-30 -10,-23 -7,-21 -10,-50 6,-35 16,-41 0,-25 -5,-27 -13,-35 -15,-19 -20,-17 -14,-10 -26,-19 -35,-31 -31,-51 -9,-16 -22,-39 -47,-94 -25,-46 -26,-41 -25,-26 -29,-25 -13,-13 -9,-7 -26,-25 -20,-20 -5,-3 -28,-10 -21,-9 -13,-4 -35,-15 -25,-12 -6,-3 -37,-25 -40,-26 -20,-21 -20,-25 -6,-12 -16,-42 -16,-58 -35,-78 -16,-40 -14,-29 -7,-22 -7,-19 -10,-25 1,-36 2,-41 0,-45 -9,-60 -12,-35 -10,-21 -9,-14 -7,-11 -15,-26 -16,-26 31,-19 z" />
@@ -103,25 +87,32 @@
 				<path id="York" :class="{'active': activeCounty === 'York'}" @click="selectCounty(46, 'York')" d="M -3947,-13491 l 354,20 1035,61 298,20 1030,70 214,14 -26,35 -23,47 -14,31 -5,30 1,33 11,25 9,12 21,8 20,7 26,9 16,15 25,30 16,30 5,30 15,56 0,45 -3,26 -7,19 -16,21 -20,10 -26,5 -15,9 -46,26 -15,16 -18,21 -9,33 -8,26 -11,40 -11,38 -10,50 -5,73 -4,58 9,38 7,28 18,32 18,28 23,33 19,22 17,28 15,15 26,40 33,-22 921,-627 56,-35 270,369 -40,246 72,146 -47,116 -20,146 25,25 36,-5 -10,65 25,116 103,172 -11,191 21,20 72,-15 36,15 35,318 31,55 5,45 -26,111 -61,66 -31,30 -10,60 10,106 -16,151 10,141 21,31 72,45 20,81 -82,120 -205,106 -10,35 10,46 -774,-11 -1111,10 -16,0 -2054,-27 -25,0 -1332,5 77,-71 76,-35 41,-96 41,-80 -35,-41 -47,-20 -35,-116 -36,-50 -21,-262 -61,-81 46,-141 31,-20 5,-25 -31,-60 -31,-26 6,-80 20,-36 0,-40 -143,-45 -26,-66 46,-100 16,-106 46,-56 46,-151 -77,-121 0,-55 36,-81 -36,-65 -25,-212 297,-125 415,-31 77,-916 5,-81 226,-226 z" />
 				</g>
 				</svg>
+  </div>
+  <div class="column">
+    <h1>{{countyName}}</h1> 
+	<p>{{countyBio}}</p>
+		<div class="pure-g">
+			<div class="pure-u-12-24">
+				<h3>Population Rank</h3>
+				<h2>{{countyPopulationRank}} of 46</h2>
 			</div>
-
-			<div class="pure-u-12-24" >
-				<h1>{{countyName}}</h1> 
-				<p>{{countyBio}}
-				</p>
-				<div class="pure-g">
-					<div class="pure-u-12-24">
-						<h3>Population Rank</h3>
-						<h2>{{countyPopulationRank}} of 46</h2>
-					</div>
-					<div class="pure-u-12-24">
-						<h3>Population</h3>
-						<h2>{{(countyPopulation / 1000).toFixed(1)}} <span>k</span></h2> 
-					</div>
-				</div>
+			<div class="pure-u-12-24">
+				<h3>Population</h3>
+				<h2>{{(countyPopulation / 1000).toFixed(1)}} <span>k</span></h2> 
 			</div>
 		</div>
+		<bar></bar>
+  </div>
+</div>
 
+
+
+
+
+		
+
+
+		
     <!--<ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
@@ -141,7 +132,32 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import bar from './populationChart'
+
+
+// Vue.component('Bar', {
+//   extends: VueChartJs.Bar,
+//   mounted () {
+//     this.renderChart({
+//       labels: ['1990', '2000', '2010' ],
+//       datasets: [
+//         {
+//           label: 'Data One',
+//           backgroundColor: '#f87979',
+//           data: ['2000', '221111', '222']
+//         }
+//       ]
+//     }, {responsive: true, maintainAspectRatio: false})
+//   }
+  
+// })
+
+
 export default {
+   components: {
+	   bar
+   },
   data() {
     return {
 			countyData:{
@@ -730,17 +746,17 @@ export default {
 			countyBio: null,
 			countyPopulation: null,
 			countyPopulationRank: null,
-			activeCounty: 'abbeville'
+			activeCounty: 'Abbeville'
     }
   },
   methods : {
-		selectCounty(countyNumber, selectedCounty){
-				this.activeCounty = selectedCounty;
-				this.countyName = this.countyData[countyNumber].name;
-				this.countyBio = this.countyData[countyNumber].bio;
-				this.countyPopulation = this.countyData[countyNumber].population;
-				this.countyPopulationRank = this.countyData[countyNumber].populationRank;
-		}
+	selectCounty(countyNumber, selectedCounty){
+		this.activeCounty = selectedCounty;
+		this.countyName = this.countyData[countyNumber].name;
+		this.countyBio = this.countyData[countyNumber].bio;
+		this.countyPopulation = this.countyData[countyNumber].population;
+		this.countyPopulationRank = this.countyData[countyNumber].populationRank;
+	}
   },
   filters: {
   }
