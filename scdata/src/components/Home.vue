@@ -93,71 +93,48 @@
 	<p>{{countyBio}}</p>
 		<div class="pure-g">
 			<div class="pure-u-12-24">
-				<h3>Population Rank</h3>
-				<h2>{{countyPopulationRank}} of 46</h2>
+				<h2>Population Rank</h2>
+				<h1>{{countyPopulationRank}} of 46</h1>
+				
 			</div>
 			<div class="pure-u-12-24">
-				<h3>Population</h3>
-				<h2>{{(countyPopulation / 1000).toFixed(1)}} <span>k</span></h2> 
+				<h2>Population</h2>
+				<h1>{{(countyPopulation / 1000).toFixed(1)}} <span>k</span></h1> 
+				<Bar :height='200' :weight='200'></Bar>
 			</div>
 		</div>
-		<bar></bar>
+		
   </div>
 </div>
-
-
-
-
-
-		
-
-
-		
-    <!--<ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>-->
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import bar from './populationChart'
+import Vue from 'vue';
+import { Bar } from 'vue-chartjs'
+//import population from './populationChart'
 
-
-// Vue.component('Bar', {
-//   extends: VueChartJs.Bar,
-//   mounted () {
-//     this.renderChart({
-//       labels: ['1990', '2000', '2010' ],
-//       datasets: [
-//         {
-//           label: 'Data One',
-//           backgroundColor: '#f87979',
-//           data: ['2000', '221111', '222']
-//         }
-//       ]
-//     }, {responsive: true, maintainAspectRatio: false})
-//   }
-  
-// })
-
+Vue.component('Bar', {
+  extends: VueChartJs.Bar,
+  mounted () {
+    this.renderChart({
+      labels: ['1990', '2000', '2010' ],
+      datasets: [
+        {
+          label: 'Data One',
+          backgroundColor: '#f87979',
+          data: ['24000', '221111', '222']
+        }
+      ]
+    }, {responsive: true, maintainAspectRatio: false})
+  }
+})
 
 export default {
-   components: {
-	   bar
-   },
+	// components: {
+	// 	Bar
+	// },
+
   data() {
     return {
 			countyData:{
@@ -751,11 +728,28 @@ export default {
   },
   methods : {
 	selectCounty(countyNumber, selectedCounty){
+		const self = this;
 		this.activeCounty = selectedCounty;
 		this.countyName = this.countyData[countyNumber].name;
 		this.countyBio = this.countyData[countyNumber].bio;
 		this.countyPopulation = this.countyData[countyNumber].population;
 		this.countyPopulationRank = this.countyData[countyNumber].populationRank;
+
+		Vue.component('Bar', {
+			extends: VueChartJs.Bar,
+			mounted () {
+				this.renderChart({
+				labels: ['1990', '2000', '2010' ],
+				datasets: [
+					{
+						label: self.countyData[countyNumber].name,
+						backgroundColor: '#f87979',
+						data: self.countyData[countyNumber].populationRange
+					}
+				]
+				}, {responsive: true, maintainAspectRatio: false})
+			}
+	   });
 	}
   },
   filters: {
@@ -792,11 +786,11 @@ a {
 }
 .active{
     fill: red;
-		stroke:blue;
+	stroke:grey;
 }
 .container{
 	max-width:1200px;
-	margin:0 auto;
+	margin:5em auto;
 }
 .align-right{
 		text-align:right;
