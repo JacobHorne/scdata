@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="126px" height="60px" viewBox="0 0 126 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-12-Copy-5" transform="translate(-83.000000, -31.000000)">
+            <g id="Group-6" transform="translate(82.000000, 21.000000)">
+                <text id="SC" font-family="AvenirNext-Medium, Avenir Next" font-size="36" font-weight="400">
+                    <tspan x="0" y="36" fill="#4666BB">SC</tspan>
+                    <tspan x="45.972" y="36" font-family="AvenirNext-UltraLight, Avenir Next" font-size="48" font-weight="200" fill="#000000"> </tspan>
+                </text>
+                <polygon id="Path-3" stroke="#979797" stroke-width="2" opacity="0.329427083" points="62.7975617 68.2399466 73.4833481 53.7587134 83.1478822 46.6068336 85.0782981 41.8991096 84.8634615 35.3481496 87.7777669 30.3757717 91.6385988 27.237289 82.9890899 20.3376088 70.5783834 13.4192471 57.5978929 15.349663 52.6753323 11 31.9077929 11.7908478 26.0231378 16.2308045 20.1384827 17.9681789 17 23.7594267 28.8813988 31.7332901 33.9378432 39.8784 38.3902542 42.5000294 44.6609925 50.6015492 51.6478528 54.4810626 53.7899918 62.0844106"></polygon>
+                <text id="Data" font-family="AvenirNext-Bold, Avenir Next" font-size="36" font-weight="bold" fill="#8F8F8F">
+                    <tspan x="47" y="48">Data</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
