@@ -4,10 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-// import Skeleton from 'skeleton-sass';
-// import 'skeleton-sass/skeleton_template';
-// Vue.use(Skeleton)
-
 
 Vue.config.productionTip = false
 
